@@ -1,3 +1,5 @@
 # portfolio
 
-personal portfolio site using React and Ionic with GitHub pages deployments.
+My personal portfolio site using React, Ionic and automated GitHub Pages deployments.
+
+Live Demo: https://shadyalzayat.github.io
