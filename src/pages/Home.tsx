@@ -43,7 +43,7 @@ const HomePage: React.FunctionComponent = () => {
           </IonCardContent>
         </IonCard>
 
-        <IonList lines='none'>
+        {/* <IonList lines='none'>
           <IonListHeader>
             <IonLabel>Resources</IonLabel>
           </IonListHeader>
@@ -72,7 +72,7 @@ const HomePage: React.FunctionComponent = () => {
             <IonIcon slot='start' color='medium' icon={colorFill} />
             <IonLabel>Theme Your App</IonLabel>
           </IonItem>
-        </IonList>
+        </IonList> */}
       </IonContent>
     </>
   );

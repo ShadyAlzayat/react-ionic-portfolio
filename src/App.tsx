@@ -36,16 +36,16 @@ const appPages: AppPage[] = [
     url: '#/home',
     icon: home
   },
-  {
-    title: 'List',
-    url: '#/list',
-    icon: list
-  },
-  {
-    title: 'Projects',
-    url: '#/projects',
-    icon: desktop
-  },
+  // {
+  //   title: 'List',
+  //   url: '#/list',
+  //   icon: list
+  // },
+  // {
+  //   title: 'Projects',
+  //   url: '#/projects',
+  //   icon: desktop
+  // },
   {
     title: 'Calendar',
     url: '#/calendar',
