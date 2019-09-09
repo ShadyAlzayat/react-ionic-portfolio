@@ -17,6 +17,8 @@ import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { AppPage } from '../declarations';
 
+import './Menu.css';
+
 interface MenuProps extends RouteComponentProps {
   appPages: AppPage[];
 }

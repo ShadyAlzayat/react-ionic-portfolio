@@ -2,13 +2,3 @@
   max-height: 35vh;
   overflow: hidden;
 }
-.profile-photo {
-  padding: 0.5em;
-  width: 20vh;
-  height: 20vh;
-  margin: auto;
-}
-.split-pane-visible > .split-pane-side {
-  min-width: 200px !important;
-  max-width: 200px !important;
-}
