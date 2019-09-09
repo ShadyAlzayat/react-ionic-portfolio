@@ -24,8 +24,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build && git remote set-url origin git@github.com:ShadyAlzayat/shadyalzayat.github.io.git",
+    "deploy": "gh-pages -b master -d build && git remote set-url origin git@github.com:ShadyAlzayat/react-ionic-portfolio.git && git remote -v",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
