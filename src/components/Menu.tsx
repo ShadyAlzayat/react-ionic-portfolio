@@ -10,7 +10,8 @@ import {
   IonTitle,
   IonToolbar,
   IonAvatar,
-  IonButton
+  IonButton,
+  IonText
 } from '@ionic/react';
 import { logoLinkedin, logoGithub, mail, download } from 'ionicons/icons';
 import React from 'react';
@@ -35,9 +36,10 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             alt=''
           />
         </IonAvatar>
-        <IonTitle color='medium' className='ion-padding-bottom'>
-          Shady Alzayat
-        </IonTitle>
+        <IonTitle>Shady Alzayat</IonTitle>
+        <IonText color='medium'>
+          <p style={{ fontSize: '.7em' }}>Software Engineer</p>
+        </IonText>
       </IonToolbar>
     </IonHeader>
     <IonContent className='ion-text-center'>
