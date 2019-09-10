@@ -78,7 +78,9 @@ const HomePage: React.FunctionComponent = () => {
           </IonSlide>
           <IonSlide>
             <div className='intro-slides-text-box'>
-              <h1 className='intro-slides-text'>I love shipping software.</h1>
+              <h1 className='intro-slides-text'>
+                I love shipping software but enjoy the build more.
+              </h1>
             </div>
           </IonSlide>
           <IonSlide>
