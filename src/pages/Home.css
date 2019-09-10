@@ -2,3 +2,21 @@
   max-height: 35vh;
   overflow: hidden;
 }
+.intro-slides {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-slides-text {
+  font-size: 1.2em;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: black;
+  font-style: italic;
+}
+.intro-slides-text-box {
+  padding: 0.2em;
+  margin-left: 60vw;
+  margin-right: 10vw;
+  background-color: white;
+  opacity: 0.8;
+}

@@ -1,4 +1,5 @@
 import {
+  IonButton,
   IonButtons,
   IonCard,
   IonCardContent,
@@ -14,11 +15,29 @@ import {
   IonListHeader,
   IonMenuButton,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonSlides,
+  IonSlide
 } from '@ionic/react';
-import { book, build, colorFill, grid } from 'ionicons/icons';
+import { book, build, download, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
+
+// Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
+const slideOpts = {
+  initialSlide: 0,
+  speed: 4000,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  direction: 'vertical'
+};
 
 const HomePage: React.FunctionComponent = () => {
   return (
@@ -32,7 +51,41 @@ const HomePage: React.FunctionComponent = () => {
       </IonToolbar>
       {/* </IonHeader> */}
       <IonContent>
-        <IonCard className='welcome-card'>
+        <IonSlides
+          pager={true}
+          options={slideOpts}
+          className='intro-slides'
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/me_sutro.jpg)`
+          }}
+        >
+          <IonSlide>
+            <div className='intro-slides-text-box'>
+              <h1 className='intro-slides-text'>Hi!</h1>
+              <h1 className='intro-slides-text'>I'm Shady Alzayat</h1>
+            </div>
+          </IonSlide>
+          <IonSlide>
+            <div className='intro-slides-text-box'>
+              <h1 className='intro-slides-text'>I love shipping software.</h1>
+            </div>
+          </IonSlide>
+          <IonSlide>
+            <div className='intro-slides-text-box'>
+              <h1 className='intro-slides-text'>Download my resume.</h1>
+              <IonButton
+                href='`${process.env.PUBLIC_URL}/assets/shady_alzayat.docx`'
+                download='shady_alzayat.docx'
+                fill='outline'
+                color='dark'
+              >
+                <IonIcon slot='start' icon={download} />
+                Resume
+              </IonButton>
+            </div>
+          </IonSlide>
+        </IonSlides>
+        {/* <IonCard className='welcome-card'>
           <img src={`${process.env.PUBLIC_URL}/assets/shapes.svg`} alt='' />
           <IonCardHeader>
             <IonCardSubtitle>Hi!</IonCardSubtitle>
@@ -41,7 +94,7 @@ const HomePage: React.FunctionComponent = () => {
           <IonCardContent>
             <p>My name is a noun, not an adjective :)</p>
           </IonCardContent>
-        </IonCard>
+        </IonCard> */}
 
         {/* <IonList lines='none'>
           <IonListHeader>
