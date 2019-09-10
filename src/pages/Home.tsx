@@ -23,7 +23,6 @@ import {
 import { book, build, download, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
-import '../theme/animate.css';
 import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
