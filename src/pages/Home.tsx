@@ -53,11 +53,11 @@ const HomePage: React.FunctionComponent = () => {
   return (
     <>
       <IonHeader className='ion-hide-md-up'>
-        <IonToolbar>
+        <IonToolbar mode='md'>
           <IonButtons slot='start'>
             <IonMenuButton />
           </IonButtons>
-          <IonTitle className='animated fadeInLeft ion-text-center'>
+          <IonTitle className='animated fadeInLeft toolbar-title '>
             Shady Alzayat
           </IonTitle>
         </IonToolbar>
