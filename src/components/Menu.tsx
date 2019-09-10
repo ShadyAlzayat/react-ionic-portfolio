@@ -78,6 +78,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
         }
         fill='clear'
         size='small'
+        color='medium'
       >
         <IonIcon slot='icon-only' icon={logoLinkedin} />
       </IonButton>
@@ -88,6 +89,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
         }
         fill='clear'
         size='small'
+        color='medium'
       >
         <IonIcon slot='icon-only' icon={logoGithub} />
       </IonButton>
@@ -96,6 +98,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
         onClick={() => window.open('mailto:emailshady@gmail.com', '_self')}
         fill='clear'
         size='small'
+        color='medium'
       >
         <IonIcon slot='icon-only' icon={mail} />
       </IonButton>

@@ -22,6 +22,7 @@ import {
 import { book, build, download, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
+import '../theme/animate.css';
 import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
@@ -34,6 +35,7 @@ initializeReactGA();
 const slideOpts = {
   initialSlide: 0,
   speed: 4000,
+  loop: true,
   autoplay: {
     delay: 3500,
     disableOnInteraction: false
@@ -49,14 +51,16 @@ const slideOpts = {
 const HomePage: React.FunctionComponent = () => {
   return (
     <>
-      {/* <IonHeader> */}
-      <IonToolbar>
-        <IonButtons slot='start'>
-          <IonMenuButton />
-        </IonButtons>
-        {/* <IonTitle>Shady Alzayat</IonTitle> */}
-      </IonToolbar>
-      {/* </IonHeader> */}
+      <IonHeader>
+        <IonToolbar>
+          <IonButtons slot='start'>
+            <IonMenuButton />
+          </IonButtons>
+          {/* <IonTitle className='animated fadeInLeft ion-text-center'>
+            Shady Alzayat
+          </IonTitle> */}
+        </IonToolbar>
+      </IonHeader>
       <IonContent>
         <IonSlides
           pager={true}
