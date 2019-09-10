@@ -20,7 +20,14 @@ import {
   IonSlide
 } from '@ionic/react';
 
-import { book, build, download, colorFill, grid } from 'ionicons/icons';
+import {
+  book,
+  build,
+  download,
+  colorFill,
+  grid,
+  calendar
+} from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
 import ReactGA from 'react-ga';
@@ -100,6 +107,15 @@ const HomePage: React.FunctionComponent = () => {
               >
                 <IonIcon slot='start' icon={download} />
                 Resume
+              </IonButton>
+            </div>
+          </IonSlide>
+          <IonSlide>
+            <div className='intro-slides-text-box'>
+              <h1 className='intro-slides-text'>Book a meeting.</h1>
+              <IonButton href='#/calendar' fill='outline' color='dark'>
+                <IonIcon slot='start' icon={calendar} />
+                Calendar
               </IonButton>
             </div>
           </IonSlide>
