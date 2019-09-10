@@ -74,7 +74,7 @@ const HomePage: React.FunctionComponent = () => {
             <div className='intro-slides-text-box'>
               <h1 className='intro-slides-text'>Download my resume.</h1>
               <IonButton
-                href='`${process.env.PUBLIC_URL}/assets/Shady_Alzayat.docx`'
+                href='`${process.env.PUBLIC_URL}/assets/Shady_Alzayat.pdf`'
                 download='shady_alzayat.docx'
                 fill='outline'
                 color='dark'
