@@ -16,6 +16,7 @@ import { logoLinkedin, logoGithub, mail, download } from 'ionicons/icons';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { AppPage } from '../declarations';
+import ReactGA from 'react-ga';
 
 import './Menu.css';
 
@@ -55,7 +56,16 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             </IonMenuToggle>
           );
         })}
-        <IonItem href='/assets/shady_alzayat.pdf' download='shady_alzayat.pdf'>
+        <IonItem
+          onClick={() =>
+            ReactGA.event({
+              category: 'User',
+              action: 'Resume download'
+            })
+          }
+          href='/assets/shady_alzayat.pdf'
+          download='shady_alzayat.pdf'
+        >
           <IonIcon slot='start' icon={download} />
           <IonLabel>Resume</IonLabel>
         </IonItem>

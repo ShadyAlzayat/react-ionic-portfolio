@@ -8,6 +8,13 @@ import {
 } from '@ionic/react';
 
 import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
+
+const initializeReactGA = () => {
+  ReactGA.initialize('UA-147558293-1');
+  ReactGA.pageview('/calendar');
+};
+initializeReactGA();
 
 const CalendarPage: React.FunctionComponent = () => {
   useEffect(() => {

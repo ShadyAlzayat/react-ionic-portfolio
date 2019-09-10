@@ -22,6 +22,13 @@ import {
 import { book, build, download, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
+import ReactGA from 'react-ga';
+
+const initializeReactGA = () => {
+  ReactGA.initialize('UA-147558293-1');
+  ReactGA.pageview('/home');
+};
+initializeReactGA();
 
 // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
 const slideOpts = {
@@ -74,6 +81,12 @@ const HomePage: React.FunctionComponent = () => {
             <div className='intro-slides-text-box'>
               <h1 className='intro-slides-text'>Download my resume.</h1>
               <IonButton
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'User',
+                    action: 'Resume download'
+                  })
+                }
                 href='/assets/shady_alzayat.pdf'
                 download='shady_alzayat.pdf'
                 fill='outline'
