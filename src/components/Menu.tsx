@@ -12,7 +12,7 @@ import {
   IonAvatar,
   IonButton
 } from '@ionic/react';
-import { logoLinkedin, logoGithub, mail } from 'ionicons/icons';
+import { logoLinkedin, logoGithub, mail, download } from 'ionicons/icons';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { AppPage } from '../declarations';
@@ -55,6 +55,10 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             </IonMenuToggle>
           );
         })}
+        <IonItem href='/assets/shady_alzayat.pdf' download='shady_alzayat.pdf'>
+          <IonIcon slot='start' icon={download} />
+          <IonLabel>Resume</IonLabel>
+        </IonItem>
       </IonList>
       <br />
 
