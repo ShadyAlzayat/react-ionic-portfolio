@@ -19,6 +19,7 @@ import {
   IonSlides,
   IonSlide
 } from '@ionic/react';
+
 import { book, build, download, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
@@ -51,14 +52,14 @@ const slideOpts = {
 const HomePage: React.FunctionComponent = () => {
   return (
     <>
-      <IonHeader>
+      <IonHeader className='ion-hide-md-up'>
         <IonToolbar>
           <IonButtons slot='start'>
             <IonMenuButton />
           </IonButtons>
-          {/* <IonTitle className='animated fadeInLeft ion-text-center'>
+          <IonTitle className='animated fadeInLeft ion-text-center'>
             Shady Alzayat
-          </IonTitle> */}
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>

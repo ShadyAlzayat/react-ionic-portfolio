@@ -4,11 +4,14 @@ import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
 
+/* components */
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
 import Projects from './pages/Projects';
 import Calendar from './pages/Calendar';
+
+/* icons */
 import { home, list, desktop, calendar } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
