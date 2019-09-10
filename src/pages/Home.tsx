@@ -59,7 +59,7 @@ const HomePage: React.FunctionComponent = () => {
   return (
     <>
       <IonHeader className='ion-hide-md-up'>
-        <IonToolbar mode='md'>
+        <IonToolbar>
           <IonButtons slot='start'>
             <IonMenuButton />
           </IonButtons>

@@ -35,10 +35,8 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             alt=''
           />
         </IonAvatar>
-        <IonTitle className='animated fadeInLeft ion-hide-md-down'>
-          Shady Alzayat
-        </IonTitle>
-        <IonTitle className='ion-hide-md-up'>Shady Alzayat</IonTitle>
+        <h3 className='animated fadeInLeft ion-hide-md-down'>Shady Alzayat</h3>
+        <h3 className='ion-hide-md-up'>Shady Alzayat</h3>
         <IonText color='medium'>
           <p className='animated zoomIn' style={{ fontSize: '.7em' }}>
             Software Engineer
