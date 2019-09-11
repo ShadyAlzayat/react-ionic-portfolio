@@ -66,7 +66,7 @@ const ListItems = () => {
         </IonCardHeader>
         <IonCardContent>
           {x.description.map(y => (
-            <p>{y}</p>
+            <p style={{ fontSize: '1em' }}>{y}</p>
           ))}
         </IonCardContent>
       </IonCard>
