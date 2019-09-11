@@ -7,7 +7,7 @@ import { AppPage } from './declarations';
 /* components */
 import Menu from './components/Menu';
 import Home from './pages/Home';
-import List from './pages/List';
+import Timeline from './pages/Timeline';
 import Projects from './pages/Projects';
 import Calendar from './pages/Calendar';
 
@@ -35,6 +35,7 @@ import './theme/variables.css';
 
 /* annimation */
 import './theme/animate.css';
+import TimeLinePage from './pages/Timeline';
 
 const appPages: AppPage[] = [
   {
@@ -42,21 +43,21 @@ const appPages: AppPage[] = [
     url: '#/home',
     icon: home
   },
-  // {
-  //   title: 'List',
-  //   url: '#/list',
-  //   icon: list
-  // },
-  // {
-  //   title: 'Projects',
-  //   url: '#/projects',
-  //   icon: desktop
-  // },
   {
     title: 'Calendar',
     url: '#/calendar',
     icon: calendar
   }
+  // {
+  //   title: 'Timeline',
+  //   url: '#/timeline',
+  //   icon: list
+  // }
+  // {
+  //   title: 'Projects',
+  //   url: '#/projects',
+  //   icon: desktop
+  // },
 ];
 
 const App: React.FunctionComponent = () => (
@@ -67,7 +68,7 @@ const App: React.FunctionComponent = () => (
         <Menu appPages={appPages} />
         <IonPage id='main'>
           <Route path='/home' component={Home} exact={true} />
-          <Route path='/list' component={List} exact={true} />
+          <Route path='/timeline' component={Timeline} exact={true} />
           <Route path='/projects' component={Projects} exact={true} />
           <Route path='/calendar' component={Calendar} exact={true} />
           <Route exact path='/' render={() => <Redirect to='/home' />} />

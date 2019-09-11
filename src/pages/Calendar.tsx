@@ -11,7 +11,7 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
-  ReactGA.initialize('UA-147558293-1');
+  ReactGA.initialize(`${process.env.TRACKING_ID}`);
   ReactGA.pageview('/calendar');
 };
 initializeReactGA();

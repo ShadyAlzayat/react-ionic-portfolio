@@ -33,7 +33,7 @@ import './Home.css';
 import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
-  ReactGA.initialize('UA-147558293-1');
+  ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/home');
 };
 initializeReactGA();

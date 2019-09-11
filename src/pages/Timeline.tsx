@@ -1,16 +1,37 @@
-import { IonButtons, IonContent, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonTitle, IonToolbar } from '@ionic/react';
-import { americanFootball, basketball, beer, bluetooth, boat, build, flask, football, paperPlane, wifi } from 'ionicons/icons';
+import {
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonItem,
+  IonList,
+  IonMenuButton,
+  IonTitle,
+  IonToolbar
+} from '@ionic/react';
+import {
+  americanFootball,
+  basketball,
+  beer,
+  bluetooth,
+  boat,
+  build,
+  flask,
+  football,
+  paperPlane,
+  wifi
+} from 'ionicons/icons';
 import React from 'react';
 
-const ListPage: React.FunctionComponent = () => {
+const TimelinePage: React.FunctionComponent = () => {
   return (
     <>
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot="start">
+          <IonButtons slot='start'>
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>List</IonTitle>
+          <IonTitle>Timeline</IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -38,9 +59,9 @@ const ListItems = () => {
   const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(x => {
     return (
       <IonItem key={x}>
-        <IonIcon icon={icons[x - 1]} slot="start" />
+        <IonIcon icon={icons[x - 1]} slot='start' />
         Item {x}
-        <div className="item-note" slot="end">
+        <div className='item-note' slot='end'>
           This is item # {x}
         </div>
       </IonItem>
@@ -50,4 +71,4 @@ const ListItems = () => {
   return <IonList>{items}</IonList>;
 };
 
-export default ListPage;
+export default TimelinePage;
