@@ -83,7 +83,6 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
           window.open('https://www.linkedin.com/in/shadyalzayat/', '_system')
         }
         fill='clear'
-        size='small'
         color='medium'
       >
         <IonIcon slot='icon-only' icon={logoLinkedin} />
@@ -94,7 +93,6 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
           window.open('https://github.com/shadyalzayat', '_system')
         }
         fill='clear'
-        size='small'
         color='medium'
       >
         <IonIcon slot='icon-only' icon={logoGithub} />
@@ -103,7 +101,6 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
       <IonButton
         onClick={() => window.open('mailto:emailshady@gmail.com', '_self')}
         fill='clear'
-        size='small'
         color='medium'
       >
         <IonIcon slot='icon-only' icon={mail} />
