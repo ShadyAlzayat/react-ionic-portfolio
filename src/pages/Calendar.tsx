@@ -14,7 +14,9 @@ const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.TRACKING_ID}`);
   ReactGA.pageview('/calendar');
 };
-initializeReactGA();
+if (document.location.hostname != 'localhost') {
+  initializeReactGA();
+}
 
 const CalendarPage: React.FunctionComponent = () => {
   useEffect(() => {

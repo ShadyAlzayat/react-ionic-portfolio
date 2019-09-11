@@ -36,7 +36,9 @@ const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/home');
 };
-initializeReactGA();
+if (document.location.hostname != 'localhost') {
+  initializeReactGA();
+}
 
 // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
 const slideOpts = {
