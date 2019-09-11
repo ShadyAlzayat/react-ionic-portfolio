@@ -53,8 +53,8 @@ const ListItems = () => {
       >
         <img
           style={{
-            maxHeight: '5em',
-            maxWidth: '10em',
+            maxHeight: '6em',
+            maxWidth: '12em',
             padding: 15
           }}
           src={x.logo}
