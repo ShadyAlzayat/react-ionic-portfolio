@@ -2,26 +2,19 @@ import {
   IonButtons,
   IonContent,
   IonHeader,
-  IonIcon,
-  IonItem,
   IonList,
   IonMenuButton,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCardContent
 } from '@ionic/react';
-import {
-  americanFootball,
-  basketball,
-  beer,
-  bluetooth,
-  boat,
-  build,
-  flask,
-  football,
-  paperPlane,
-  wifi
-} from 'ionicons/icons';
+
 import React from 'react';
+import localJson from './Timeline.json';
 
 const TimelinePage: React.FunctionComponent = () => {
   return (
@@ -43,28 +36,32 @@ const TimelinePage: React.FunctionComponent = () => {
 };
 
 const ListItems = () => {
-  const icons = [
-    flask,
-    wifi,
-    beer,
-    football,
-    basketball,
-    paperPlane,
-    americanFootball,
-    boat,
-    bluetooth,
-    build
-  ];
-
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(x => {
+  const items = localJson.experience.map(x => {
     return (
-      <IonItem key={x}>
-        <IonIcon icon={icons[x - 1]} slot='start' />
-        Item {x}
-        <div className='item-note' slot='end'>
-          This is item # {x}
-        </div>
-      </IonItem>
+      <IonCard
+        style={{ maxWidth: '900px', margin: 'auto' }}
+        key={x.company}
+        className='welcome-card'
+      >
+        <img
+          style={{
+            maxHeight: '5em',
+            maxWidth: '10em',
+            padding: 15
+          }}
+          src={x.logo}
+          alt=''
+        />
+        <IonCardHeader>
+          <IonCardSubtitle>{x.company}</IonCardSubtitle>
+          <IonCardTitle>{x.role}</IonCardTitle>
+        </IonCardHeader>
+        <IonCardContent>
+          {x.description.map(y => (
+            <p>{y}</p>
+          ))}
+        </IonCardContent>
+      </IonCard>
     );
   });
 

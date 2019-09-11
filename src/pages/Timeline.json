@@ -1,0 +1,48 @@
+{
+  "experience": [
+    {
+      "company": "Sarment",
+      "URL": "https://www.sarment.com",
+      "logo": "https://assets.website-files.com/5d12f7304b05c8df99fb5497/5d4c5a08e11fbed619640102_sarment_wordmark_rough_19.10.17-p-500.png",
+      "role": "VP, Software Engineering",
+      "start": "07/01/2018",
+      "end": "02/01/2019",
+      "description": [
+        "Leading a global software organization of cross functional engineers, R&D, QA and UX, across Singapore, UK and SF.",
+        "Supporting product design and customer support teams while managing backlog and bugs against several project roadmaps.",
+        "Built a team keen on continuous release through test driven development, modern best practices and Agile methodology.",
+        "Wrote user stories for luxury ecommerce and lifestyle apps comprised of mobile, back office and end-user web applications."
+      ],
+      "location": "San Francisco, CA"
+    },
+    {
+      "company": "PowWow Mobile",
+      "URL": "https://www.powwowmobile.com",
+      "logo": "https://www.powwowmobile.com/wp-content/uploads/powwow_logo_retina.png",
+      "role": "Developer Relations Engineer",
+      "start": "01/01/2017",
+      "end": "05/01/2018",
+      "description": [
+        "Educate enterprise developers throughout the web and mobile app design lifecycle, using onsite training courses, online community discussions, self-help documentation, videos and guided code samples.",
+        "Manage customer and product support operations, responsible for answering help desk tickets, spanning design experience, runtime architecture, and high availabi¬lity production deployment.",
+        "Work with customers, their senior engineers and developers to gain knowledge of app modernization use-cases, and consult using proprietary or open source industry best practices."
+      ],
+      "location": "San Francisco, CA"
+    },
+    {
+      "company": "OpenVpn",
+      "URL": "https://openvpn.net/",
+      "logo": "https://openvpn.net/wp-content/uploads/your-private-tunnel-vpn.svg",
+      "role": "Sr. Frontend Engineer",
+      "start": "01/01/2015",
+      "end": "01/01/2017",
+      "description": [
+        "Product planner and frontend developer for PrivateTunnel.com and mobile applications offered by OpenVpn.",
+        "Designed, prototyped, developed, tested and deployed on-demand, performant and fully encrypted e-commerce experiences.",
+        "Coded mobile applications with Apache Cordova and Ionic, so they run natively on all devices, without app store downloads.",
+        "Used React.js and Angular frameworks to build single-page applications with fast templating and middleware resources."
+      ],
+      "location": "Pleasanton, CA"
+    }
+  ]
+}

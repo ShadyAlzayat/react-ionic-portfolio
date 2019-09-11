@@ -1,11 +1,6 @@
 import {
   IonButton,
   IonButtons,
-  IonCard,
-  IonCardContent,
-  IonCardHeader,
-  IonCardSubtitle,
-  IonCardTitle,
   IonContent,
   IonHeader,
   IonIcon,
@@ -122,16 +117,6 @@ const HomePage: React.FunctionComponent = () => {
             </div>
           </IonSlide>
         </IonSlides>
-        {/* <IonCard className='welcome-card'>
-          <img src={`${process.env.PUBLIC_URL}/assets/shapes.svg`} alt='' />
-          <IonCardHeader>
-            <IonCardSubtitle>Hi!</IonCardSubtitle>
-            <IonCardTitle>I'm Shady Alzayat</IonCardTitle>
-          </IonCardHeader>
-          <IonCardContent>
-            <p>My name is a noun, not an adjective :)</p>
-          </IonCardContent>
-        </IonCard> */}
 
         {/* <IonList lines='none'>
           <IonListHeader>
