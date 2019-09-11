@@ -60,19 +60,21 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             </IonMenuToggle>
           );
         })}
-        <IonItem
-          onClick={() =>
-            ReactGA.event({
-              category: 'User',
-              action: 'Resume download'
-            })
-          }
-          href='/assets/shady_alzayat.pdf'
-          download='shady_alzayat.pdf'
-        >
-          <IonIcon slot='start' icon={download} />
-          <IonLabel>Resume</IonLabel>
-        </IonItem>
+        <IonMenuToggle autoHide={false}>
+          <IonItem
+            onClick={() =>
+              ReactGA.event({
+                category: 'User',
+                action: 'Resume download'
+              })
+            }
+            href='/assets/shady_alzayat.pdf'
+            download='shady_alzayat.pdf'
+          >
+            <IonIcon slot='start' icon={download} />
+            <IonLabel>Resume</IonLabel>
+          </IonItem>
+        </IonMenuToggle>
       </IonList>
       <br />
 
