@@ -53,7 +53,9 @@ const ListItems = () => {
           className='welcome-card'
         >
           <img
-            onClick={() => window.open(x.URL, '_new')}
+            onClick={() => {
+              if (x.URL) window.open(x.URL, '_new');
+            }}
             style={{
               maxHeight: '5em',
               maxWidth: '12em',
