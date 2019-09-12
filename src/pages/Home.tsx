@@ -83,7 +83,7 @@ const HomePage: React.FunctionComponent = () => {
           <IonSlide>
             <div className='intro-slides-text-box'>
               <h1 className='intro-slides-text'>
-                I love shipping software but enjoy the build more.
+                I love shipping software, yet enjoy the build more.
               </h1>
             </div>
           </IonSlide>
@@ -109,7 +109,7 @@ const HomePage: React.FunctionComponent = () => {
           </IonSlide>
           <IonSlide>
             <div className='intro-slides-text-box'>
-              <h1 className='intro-slides-text'>Book a meeting.</h1>
+              <h1 className='intro-slides-text'>Book a meeting, let's chat.</h1>
               <IonButton href='#/calendar' fill='outline' color='dark'>
                 <IonIcon slot='start' icon={calendar} />
                 Calendar
