@@ -46,30 +46,34 @@ const TimelinePage: React.FunctionComponent = () => {
 const ListItems = () => {
   const items = localJson.experience.map(x => {
     return (
-      <IonCard
-        style={{ maxWidth: '900px', margin: 'auto' }}
-        key={x.company}
-        className='welcome-card'
-      >
-        <img
-          style={{
-            maxHeight: '5em',
-            maxWidth: '12em',
-            padding: 15
-          }}
-          src={x.logo}
-          alt=''
-        />
-        <IonCardHeader>
-          <IonCardSubtitle>{x.company}</IonCardSubtitle>
-          <IonCardTitle>{x.role}</IonCardTitle>
-        </IonCardHeader>
-        <IonCardContent>
-          {x.description.map(y => (
-            <p style={{ fontSize: '1em' }}>{y}</p>
-          ))}
-        </IonCardContent>
-      </IonCard>
+      <>
+        <IonCard
+          style={{ maxWidth: '900px', margin: 'auto', padding: '1em' }}
+          key={x.company}
+          className='welcome-card'
+        >
+          <img
+            onClick={() => window.open(x.URL, '_new')}
+            style={{
+              maxHeight: '5em',
+              maxWidth: '12em',
+              padding: 15
+            }}
+            src={x.logo}
+            alt=''
+          />
+          <IonCardHeader>
+            <IonCardSubtitle>{x.company}</IonCardSubtitle>
+            <IonCardTitle>{x.role}</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+            {x.description.map(y => (
+              <p style={{ fontSize: '1em' }}>{y}</p>
+            ))}
+          </IonCardContent>
+        </IonCard>
+        <br></br>
+      </>
     );
   });
 
