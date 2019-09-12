@@ -11,13 +11,13 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
-  ReactGA.initialize(`${process.env.TRACKING_ID}`);
+  ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/calendar');
 };
 if (document.location.hostname != 'localhost') {
   initializeReactGA();
 }
-
+console.log(process.env.CALENDLY);
 const CalendarPage: React.FunctionComponent = () => {
   useEffect(() => {
     const head = document.querySelector('head');
@@ -48,7 +48,7 @@ const CalendarPage: React.FunctionComponent = () => {
         <div id='schedule_form'>
           <div
             className='calendly-inline-widget'
-            data-url='https://calendly.com/shadyalzayat'
+            data-url={`https://calendly.com/${process.env.REACT_APP_CALENDLY}`}
             style={{ minWidth: '80vw', height: '90vh' }}
           />
         </div>
