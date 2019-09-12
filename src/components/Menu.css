@@ -1,8 +1,15 @@
-.profile-photo {
+.profile-photo-avatar {
   padding: 0.5em;
+  margin: auto;
+  width: 6.5em !important;
+  height: 8em !important;
+}
+
+.profile-photo {
+  /* padding: 0.5em;
   width: 18vh;
   height: 20vh;
-  margin: auto;
+  margin: auto; */
 }
 .split-pane-visible > .split-pane-side {
   min-width: 200px !important;

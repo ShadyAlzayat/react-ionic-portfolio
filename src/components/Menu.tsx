@@ -10,7 +10,11 @@ import {
   IonToolbar,
   IonAvatar,
   IonButton,
-  IonText
+  IonText,
+  IonTitle,
+  IonCol,
+  IonRow,
+  IonGrid
 } from '@ionic/react';
 import { logoLinkedin, logoGithub, mail, download } from 'ionicons/icons';
 import React from 'react';
@@ -28,16 +32,25 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
   <IonMenu contentId='main'>
     <IonHeader className='ion-text-center'>
       <IonToolbar>
-        <IonAvatar className='profile-photo'>
+        <IonAvatar className='profile-photo-avatar'>
           <img
+            className='profile-photo'
             src={`${process.env.PUBLIC_URL}/assets/profilePhoto.jpg`}
             alt=''
           />
         </IonAvatar>
-        <h3 className='animated fadeInLeft ion-hide-md-down'>Shady Alzayat</h3>
-        <h3 className='ion-hide-md-up'>Shady Alzayat</h3>
+        <IonTitle className='animated fadeInLeft ion-hide-md-down'>
+          Shady Alzayat
+        </IonTitle>
+
+        <h3 className='ion-hide-md-up' style={{ margin: 0 }}>
+          Shady Alzayat
+        </h3>
         <IonText color='medium'>
-          <p className='animated zoomIn' style={{ fontSize: '.7em' }}>
+          <p
+            className='animated zoomIn'
+            style={{ fontSize: '.7em', margin: 0, paddingBottom: '.5em' }}
+          >
             Software Engineer
           </p>
         </IonText>
@@ -75,35 +88,46 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
           </IonItem>
         </IonMenuToggle>
       </IonList>
-      <br />
-
-      <IonButton
-        onClick={() =>
-          window.open('https://www.linkedin.com/in/shadyalzayat/', '_system')
-        }
-        fill='clear'
-        color='medium'
-      >
-        <IonIcon slot='icon-only' icon={logoLinkedin} />
-      </IonButton>
-      <br />
-      <IonButton
-        onClick={() =>
-          window.open('https://github.com/shadyalzayat', '_system')
-        }
-        fill='clear'
-        color='medium'
-      >
-        <IonIcon slot='icon-only' icon={logoGithub} />
-      </IonButton>
-      <br />
-      <IonButton
-        onClick={() => window.open('mailto:emailshady@gmail.com', '_self')}
-        fill='clear'
-        color='medium'
-      >
-        <IonIcon slot='icon-only' icon={mail} />
-      </IonButton>
+      <IonGrid>
+        <IonRow className='ion-align-items-center'>
+          <IonCol size='12' size-sm>
+            <IonButton
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/shadyalzayat/',
+                  '_system'
+                )
+              }
+              fill='clear'
+              color='medium'
+            >
+              <IonIcon slot='icon-only' icon={logoLinkedin} />
+            </IonButton>
+          </IonCol>
+          <IonCol size='12' size-sm>
+            <IonButton
+              onClick={() =>
+                window.open('https://github.com/shadyalzayat', '_system')
+              }
+              fill='clear'
+              color='medium'
+            >
+              <IonIcon slot='icon-only' icon={logoGithub} />
+            </IonButton>
+          </IonCol>
+          <IonCol size='12' size-sm>
+            <IonButton
+              onClick={() =>
+                window.open('mailto:emailshady@gmail.com', '_self')
+              }
+              fill='clear'
+              color='medium'
+            >
+              <IonIcon slot='icon-only' icon={mail} />
+            </IonButton>
+          </IonCol>
+        </IonRow>
+      </IonGrid>
     </IonContent>
   </IonMenu>
 );
