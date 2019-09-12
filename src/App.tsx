@@ -1,7 +1,6 @@
 import React from 'react';
 import { Redirect, Route, HashRouter } from 'react-router-dom';
 import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
 
 /* components */
@@ -12,7 +11,7 @@ import Projects from './pages/Projects';
 import Calendar from './pages/Calendar';
 
 /* icons */
-import { home, list, desktop, calendar } from 'ionicons/icons';
+import { home, list, calendar } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,7 +34,6 @@ import './theme/variables.css';
 
 /* annimation */
 import './theme/animate.css';
-import TimeLinePage from './pages/Timeline';
 
 const appPages: AppPage[] = [
   {
@@ -62,7 +60,6 @@ const appPages: AppPage[] = [
 
 const App: React.FunctionComponent = () => (
   <IonApp>
-    {/* <IonReactRouter basename={`${process.env.PUBLIC_URL}`}> */}
     <HashRouter>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />

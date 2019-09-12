@@ -21,7 +21,7 @@ const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/timeline');
 };
-if (document.location.hostname != 'localhost') {
+if (document.location.hostname !== 'localhost') {
   initializeReactGA();
 }
 

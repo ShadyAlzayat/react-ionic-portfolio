@@ -7,7 +7,6 @@ import {
   IonList,
   IonMenu,
   IonMenuToggle,
-  IonTitle,
   IonToolbar,
   IonAvatar,
   IonButton,

@@ -14,7 +14,7 @@ const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/calendar');
 };
-if (document.location.hostname != 'localhost') {
+if (document.location.hostname !== 'localhost') {
   initializeReactGA();
 }
 console.log(process.env.CALENDLY);
@@ -26,7 +26,7 @@ const CalendarPage: React.FunctionComponent = () => {
       'src',
       'https://assets.calendly.com/assets/external/widget.js'
     );
-    if (head != null) {
+    if (head !== null) {
       head.appendChild(script);
     }
   }, []);

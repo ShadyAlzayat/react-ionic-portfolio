@@ -4,10 +4,6 @@ import {
   IonContent,
   IonHeader,
   IonIcon,
-  IonItem,
-  IonLabel,
-  IonList,
-  IonListHeader,
   IonMenuButton,
   IonTitle,
   IonToolbar,
@@ -15,14 +11,7 @@ import {
   IonSlide
 } from '@ionic/react';
 
-import {
-  book,
-  build,
-  download,
-  colorFill,
-  grid,
-  calendar
-} from 'ionicons/icons';
+import { download, calendar } from 'ionicons/icons';
 import React from 'react';
 import './Home.css';
 import ReactGA from 'react-ga';
@@ -31,7 +20,7 @@ const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
   ReactGA.pageview('/home');
 };
-if (document.location.hostname != 'localhost') {
+if (document.location.hostname !== 'localhost') {
   initializeReactGA();
 }
 
@@ -109,7 +98,7 @@ const HomePage: React.FunctionComponent = () => {
           </IonSlide>
           <IonSlide>
             <div className='intro-slides-text-box'>
-              <h1 className='intro-slides-text'>Book a meeting, let's chat.</h1>
+              <h1 className='intro-slides-text'>let's chat.</h1>
               <IonButton href='#/calendar' fill='outline' color='dark'>
                 <IonIcon slot='start' icon={calendar} />
                 Calendar
