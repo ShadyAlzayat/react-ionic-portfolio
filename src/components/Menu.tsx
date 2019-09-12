@@ -87,9 +87,9 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
           </IonItem>
         </IonMenuToggle>
       </IonList>
-      <IonGrid>
+      <IonGrid className='menu-grid'>
         <IonRow className='ion-align-items-center'>
-          <IonCol size='12' size-sm>
+          <IonCol>
             <IonButton
               onClick={() =>
                 window.open(
@@ -103,7 +103,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
               <IonIcon slot='icon-only' icon={logoLinkedin} />
             </IonButton>
           </IonCol>
-          <IonCol size='12' size-sm>
+          <IonCol>
             <IonButton
               onClick={() =>
                 window.open('https://github.com/shadyalzayat', '_system')
@@ -114,7 +114,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
               <IonIcon slot='icon-only' icon={logoGithub} />
             </IonButton>
           </IonCol>
-          <IonCol size='12' size-sm>
+          <IonCol>
             <IonButton
               onClick={() =>
                 window.open('mailto:emailshady@gmail.com', '_self')
