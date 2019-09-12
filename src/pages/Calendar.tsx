@@ -47,6 +47,12 @@ const CalendarPage: React.FunctionComponent = () => {
         </h6>
         <div id='schedule_form'>
           <div
+            onClick={() =>
+              ReactGA.event({
+                category: 'User',
+                action: 'Browsed calendar'
+              })
+            }
             className='calendly-inline-widget'
             data-url={`https://calendly.com/${process.env.REACT_APP_CALENDLY}`}
             style={{ minWidth: '80vw', height: '90vh' }}
