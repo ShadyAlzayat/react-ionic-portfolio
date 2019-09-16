@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://shadyalzayat.github.io/shadyalzayat.github.io",
   "dependencies": {
-    "@ionic/react": "4.8.0-rc.1",
-    "@ionic/react-router": "4.8.0-rc.1",
+    "@ionic/react": "4.9.0-rc.2",
+    "@ionic/react-router": "4.9.0-rc.2",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.4",
     "@types/react": "16.9.2",
