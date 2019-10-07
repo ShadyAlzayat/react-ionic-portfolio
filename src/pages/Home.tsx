@@ -49,7 +49,7 @@ const HomePage: React.FunctionComponent = () => {
           <IonButtons slot='start'>
             <IonMenuButton />
           </IonButtons>
-          <IonTitle className='animated fadeInLeft toolbar-title '>
+          <IonTitle className='animated fadeInLeft toolbar-title'>
             Shady Alzayat
           </IonTitle>
         </IonToolbar>
@@ -99,7 +99,7 @@ const HomePage: React.FunctionComponent = () => {
           <IonSlide>
             <div className='intro-slides-text-box'>
               <h1 className='intro-slides-text'>let's chat.</h1>
-              <IonButton href='#/calendar' fill='outline' color='dark'>
+              <IonButton href='/calendar' fill='outline' color='dark'>
                 <IonIcon slot='start' icon={calendar} />
                 Calendar
               </IonButton>

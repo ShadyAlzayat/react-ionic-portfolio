@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route, HashRouter } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
 import { AppPage } from './declarations';
 
@@ -32,35 +32,36 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-/* annimation */
+/* animation */
 import './theme/animate.css';
+import { createBrowserHistory } from 'history';
 
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '#/home',
+    url: '/home',
     icon: home
   },
   {
     title: 'Calendar',
-    url: '#/calendar',
+    url: '/calendar',
     icon: calendar
   },
   {
     title: 'Timeline',
-    url: '#/timeline',
+    url: '/timeline',
     icon: list
   }
   // {
   //   title: 'Projects',
-  //   url: '#/projects',
+  //   url: '/projects',
   //   icon: desktop
   // },
 ];
-
+export const history = createBrowserHistory();
 const App: React.FunctionComponent = () => (
   <IonApp>
-    <HashRouter>
+    <Router history={history}>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
@@ -68,10 +69,13 @@ const App: React.FunctionComponent = () => (
           <Route path='/timeline' component={Timeline} exact={true} />
           <Route path='/projects' component={Projects} exact={true} />
           <Route path='/calendar' component={Calendar} exact={true} />
-          <Route exact path='/' render={() => <Redirect to='/home' />} />
+          <Route path='/' component={Home} exact={true} />
+          <Route path='#/calendar' component={Calendar} exact={true} />
+
+          {/* <Route exact path='/' render={() => <Redirect to='/home' />} /> */}
         </IonPage>
       </IonSplitPane>
-    </HashRouter>
+    </Router>
   </IonApp>
 );
 
