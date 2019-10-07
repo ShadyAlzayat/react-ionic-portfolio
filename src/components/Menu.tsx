@@ -64,10 +64,13 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
               key={index}
               autoHide={false}
             >
-              <IonItem href={appPage.url}>
-                <IonIcon slot='start' icon={appPage.icon} />
-                <IonLabel>{appPage.title}</IonLabel>
-              </IonItem>
+              {console.log(window.location.pathname)}
+              {window.location.pathname !== appPage.url && (
+                <IonItem href={appPage.url}>
+                  <IonIcon slot='start' icon={appPage.icon} />
+                  <IonLabel>{appPage.title}</IonLabel>
+                </IonItem>
+              )}
             </IonMenuToggle>
           );
         })}

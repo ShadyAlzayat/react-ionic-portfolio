@@ -39,7 +39,7 @@ import { createBrowserHistory } from 'history';
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/home',
+    url: '/',
     icon: home
   },
   {
@@ -65,7 +65,7 @@ const App: React.FunctionComponent = () => (
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
-          <Route path='/home' component={Home} exact={true} />
+          {/* <Route path='/home' component={Home} exact={true} /> */}
           <Route path='/timeline' component={Timeline} exact={true} />
           <Route path='/projects' component={Projects} exact={true} />
           <Route path='/calendar' component={Calendar} exact={true} />
