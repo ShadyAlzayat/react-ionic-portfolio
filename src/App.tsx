@@ -70,7 +70,7 @@ const App: React.FunctionComponent = () => (
           <Route path='/projects' component={Projects} exact={true} />
           <Route path='/calendar' component={Calendar} exact={true} />
           <Route path='/' component={Home} exact={true} />
-          <Route path='#/calendar' component={Calendar} exact={true} />
+          <Route path='/calendar' component={Calendar} exact={true} />
 
           {/* <Route exact path='/' render={() => <Redirect to='/home' />} /> */}
         </IonPage>
