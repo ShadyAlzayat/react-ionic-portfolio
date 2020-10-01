@@ -17,7 +17,7 @@ const initializeReactGA = () => {
 if (document.location.hostname !== 'localhost') {
   initializeReactGA();
 }
-console.log(process.env.CALENDLY);
+// console.log(process.env.CALENDLY);
 const CalendarPage: React.FunctionComponent = () => {
   useEffect(() => {
     const head = document.querySelector('head');
