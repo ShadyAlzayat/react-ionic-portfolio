@@ -4,7 +4,7 @@ import {
   IonButtons,
   IonMenuButton,
   IonTitle,
-  IonToolbar
+  IonToolbar,
 } from '@ionic/react';
 
 import React, { useEffect } from 'react';
@@ -40,17 +40,16 @@ const CalendarPage: React.FunctionComponent = () => {
           <IonTitle>Calendar</IonTitle>
         </IonToolbar>
       </IonHeader>
-
       <IonContent>
         <h6 className='ion-text-center'>
-          Shedule a meeting by making a selecting below.
+          Schedule a meeting by making a selecting below.
         </h6>
         <div id='schedule_form'>
           <div
             onClick={() =>
               ReactGA.event({
                 category: 'User',
-                action: 'Browsed calendar'
+                action: 'Browsed calendar',
               })
             }
             className='calendly-inline-widget'

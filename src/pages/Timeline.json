@@ -1,6 +1,18 @@
 {
   "experience": [
     {
+      "company": "Atlas Mental Health",
+      "URL": "https://www.atlasmh.com",
+      "logo": "https://static1.squarespace.com/static/5954808836e5d3f2032dc6cc/t/5e6d5b3a6089275b7c5957d6/1599944381839/?format=1500w",
+      "role": "Head of Engineering",
+      "start": "09/01/2019",
+      "end": "Present",
+      "description": [
+        "Principal engineer and architect of a mobile, web, and cloud stack product; Atlas Co. Atlas is an app focused on mental wellbeing through self-help content, journaling, and social interactions. Creator of Atlas Social. The only mental wellness social media platform with multimedia content delivery and sharing."
+      ],
+      "location": "San Francisco, CA"
+    },
+    {
       "company": "Sarment",
       "URL": "https://www.sarment.com",
       "logo": "https://assets.website-files.com/5d12f7304b05c8df99fb5497/5d4c5a08e11fbed619640102_sarment_wordmark_rough_19.10.17-p-500.png",

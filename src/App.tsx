@@ -40,18 +40,18 @@ const appPages: AppPage[] = [
   {
     title: 'Home',
     url: '/',
-    icon: home
+    icon: home,
   },
   {
     title: 'Calendar',
     url: '/calendar',
-    icon: calendar
+    icon: calendar,
   },
   {
     title: 'Timeline',
     url: '/timeline',
-    icon: list
-  }
+    icon: list,
+  },
   // {
   //   title: 'Projects',
   //   url: '/projects',
