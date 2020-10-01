@@ -1,5 +1,7 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { IonReactRouter } from '@ionic/react-router';
+
 import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
 import { AppPage } from './declarations';
 
@@ -7,7 +9,7 @@ import { AppPage } from './declarations';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import Timeline from './pages/Timeline';
-import Projects from './pages/Projects';
+// import Projects from './pages/Projects';
 import Calendar from './pages/Calendar';
 
 /* icons */
@@ -61,21 +63,22 @@ const appPages: AppPage[] = [
 export const history = createBrowserHistory();
 const App: React.FunctionComponent = () => (
   <IonApp>
-    <Router history={history}>
+    <IonReactRouter history={history}>
+      {/* <Router history={history}> */}
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
           {/* <Route path='/home' component={Home} exact={true} /> */}
           <Route path='/timeline' component={Timeline} exact={true} />
-          <Route path='/projects' component={Projects} exact={true} />
-          <Route path='/calendar' component={Calendar} exact={true} />
+          {/* <Route path='/projects' component={Projects} exact={true} /> */}
           <Route path='/' component={Home} exact={true} />
           <Route path='/calendar' component={Calendar} exact={true} />
 
           {/* <Route exact path='/' render={() => <Redirect to='/home' />} /> */}
         </IonPage>
       </IonSplitPane>
-    </Router>
+    </IonReactRouter>
+    {/* </Router> */}
   </IonApp>
 );
 
