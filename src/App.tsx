@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { IonReactRouter } from '@ionic/react-router';
+import { Route, Router } from 'react-router-dom';
 
 import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
 import { AppPage } from './declarations';
@@ -63,8 +62,7 @@ const appPages: AppPage[] = [
 export const history = createBrowserHistory();
 const App: React.FunctionComponent = () => (
   <IonApp>
-    <IonReactRouter history={history}>
-      {/* <Router history={history}> */}
+    <Router history={history}>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
@@ -77,8 +75,7 @@ const App: React.FunctionComponent = () => (
           {/* <Route exact path='/' render={() => <Redirect to='/home' />} /> */}
         </IonPage>
       </IonSplitPane>
-    </IonReactRouter>
-    {/* </Router> */}
+    </Router>
   </IonApp>
 );
 
