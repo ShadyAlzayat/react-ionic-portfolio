@@ -8,7 +8,7 @@ import {
   IonTitle,
   IonToolbar,
   IonSlides,
-  IonSlide
+  IonSlide,
 } from '@ionic/react';
 
 import { download, calendar } from 'ionicons/icons';
@@ -31,14 +31,14 @@ const slideOpts = {
   loop: true,
   autoplay: {
     delay: 3500,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable: true
+    clickable: true,
   },
-  direction: 'vertical'
+  direction: 'vertical',
 };
 
 const HomePage: React.FunctionComponent = () => {
@@ -60,7 +60,7 @@ const HomePage: React.FunctionComponent = () => {
           options={slideOpts}
           className='intro-slides'
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/me_sutro.jpg)`
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/me_sutro.jpg)`,
           }}
         >
           <IonSlide>
@@ -83,11 +83,11 @@ const HomePage: React.FunctionComponent = () => {
                 onClick={() =>
                   ReactGA.event({
                     category: 'User',
-                    action: 'Resume download'
+                    action: 'Resume download',
                   })
                 }
-                href='/assets/shady_alzayat.pdf'
-                download='shady_alzayat.pdf'
+                href='/assets/ShadyAlzayat.pdf'
+                download='ShadyAlzayat.pdf'
                 fill='outline'
                 color='dark'
               >

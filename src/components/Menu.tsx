@@ -14,7 +14,7 @@ import {
   IonTitle,
   IonCol,
   IonRow,
-  IonGrid
+  IonGrid,
 } from '@ionic/react';
 import { logoLinkedin, logoGithub, mail, download } from 'ionicons/icons';
 import React from 'react';
@@ -79,11 +79,11 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             onClick={() =>
               ReactGA.event({
                 category: 'User',
-                action: 'Resume download'
+                action: 'Resume download',
               })
             }
-            href='/assets/shady_alzayat.pdf'
-            download='shady_alzayat.pdf'
+            href='/assets/ShadyAlzayat.pdf'
+            download='ShadyAlzayat.pdf'
           >
             <IonIcon slot='start' icon={download} />
             <IonLabel>Resume</IonLabel>
