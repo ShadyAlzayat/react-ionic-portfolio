@@ -1,21 +1,23 @@
+import React from 'react';
+
+import ReactGA from 'react-ga';
+
 import {
   IonButtons,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
   IonContent,
   IonHeader,
   IonList,
   IonMenuButton,
   IonTitle,
   IonToolbar,
-  IonCard,
-  IonCardHeader,
-  IonCardSubtitle,
-  IonCardTitle,
-  IonCardContent
 } from '@ionic/react';
 
-import React from 'react';
 import localJson from './Timeline.json';
-import ReactGA from 'react-ga';
 
 const initializeReactGA = () => {
   ReactGA.initialize(`${process.env.REACT_APP_TRACKING_ID}`);
